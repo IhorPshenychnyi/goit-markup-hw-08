@@ -1,0 +1,33 @@
+.about {
+  padding-bottom: 94px;
+}
+
+.about-list {
+  display: flex;
+  margin: -15px;
+}
+
+.about-list-item {
+  position: relative;
+  margin: 15px;
+}
+
+.about-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.about-box {
+  position: absolute;
+  bottom: 0;
+  @include flex-center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}

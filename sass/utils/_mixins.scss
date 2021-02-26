@@ -1,0 +1,10 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  position: $pos;
+  content: $content;
+  display: $display;
+}
