@@ -16,8 +16,8 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -59,7 +59,7 @@
 .modal-form-text {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -141,8 +141,8 @@
   @include flex-center;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-top: 10px;
@@ -192,5 +192,28 @@
   &:hover,
   &:focus {
     background-color: var(--modal-btn-bg);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+
+  .modal-form-text {
+    line-height: 1, 15;
+  }
+
+  .modal-form-label-policy {
+    font-size: 14px;
+    line-height: 1.714;
   }
 }

@@ -11,3 +11,25 @@
     margin-bottom: 50px;
   }
 }
+
+@media screen and (max-width: 479px) {
+  .title {
+    .team &,
+    .clients & {
+      font-size: 26px;
+      line-height: 1.179;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .title {
+    .team &,
+    .clients & {
+      font-size: 28px;
+      line-height: 1.179;
+      margin-bottom: 30px;
+    }
+  }
+}

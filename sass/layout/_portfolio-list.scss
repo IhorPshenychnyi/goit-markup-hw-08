@@ -1,10 +1,9 @@
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
   margin: -15px;
 }
 
 .portfolio-list-item {
+  width: 450px;
   margin: 15px;
   outline: 1px solid #eeeeee;
 }
@@ -70,4 +69,29 @@
   line-height: 1.556;
   letter-spacing: 0.03em;
   color: var(--white-color);
+}
+
+@media screen and (max-width: 479px) {
+  .portfolio-list-item {
+    width: 290px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-list-item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list-item {
+    width: 370px;
+  }
 }

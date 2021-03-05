@@ -1,19 +1,18 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients-list-item {
-  width: 170px;
+  width: 210px;
   height: 90px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  margin: 15px;
 }
 
 .clients-list-link {
@@ -31,5 +30,30 @@
   &:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .clients-list-item {
+    width: 290px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list-item {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .clients-list-item {
+    width: 170px;
   }
 }

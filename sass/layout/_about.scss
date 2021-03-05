@@ -1,3 +1,9 @@
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+}
+
 .about {
   padding-bottom: 94px;
 }
@@ -9,6 +15,8 @@
 
 .about-list-item {
   position: relative;
+  width: 370px;
+  height: 294px;
   margin: 15px;
 }
 
